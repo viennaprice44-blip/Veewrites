@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vee Writes — Your Voice. Professionally Heard.</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A;
+    --navy-deep: #111d35;
+    --navy-mid: #243660;
+    --gold: #C9A84C;
+    --gold-light: #e2c47a;
+    --gold-pale: #f5e9c8;
+    --cream: #faf8f3;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #444466;
+  }
+
+- { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+font-family: ‘Jost’, sans-serif;
+background: var(–cream);
+color: var(–text-dark);
+overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+position: fixed;
+top: 0; left: 0; right: 0;
+z-index: 100;
+background: rgba(27, 42, 74, 0.97);
+backdrop-filter: blur(10px);
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+.nav-logo {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.6rem;
+font-weight: 600;
+color: var(–gold);
+letter-spacing: 0.02em;
+}
+
+.nav-logo span {
+color: var(–white);
+font-weight: 300;
+}
+
+.nav-links {
+display: flex;
+gap: 2rem;
+list-style: none;
+}
+
+.nav-links a {
+color: rgba(255,255,255,0.8);
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: 400;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(–gold); }
+
+/* HERO */
+.hero {
+min-height: 100vh;
+background: var(–navy-deep);
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+overflow: hidden;
+padding: 6rem 2rem 4rem;
+}
+
+.hero::before {
+content: ‘’;
+position: absolute;
+top: -50%;
+right: -20%;
+width: 600px;
+height: 600px;
+background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+border-radius: 50%;
+}
+
+.hero::after {
+content: ‘’;
+position: absolute;
+bottom: -30%;
+left: -10%;
+width: 400px;
+height: 400px;
+background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%);
+border-radius: 50%;
+}
+
+.hero-content {
+max-width: 800px;
+text-align: center;
+position: relative;
+z-index: 2;
+animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow {
+font-size: 0.8rem;
+font-weight: 500;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 1.5rem;
+display: block;
+}
+
+.hero h1 {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: clamp(3rem, 7vw, 5.5rem);
+font-weight: 300;
+color: var(–white);
+line-height: 1.1;
+margin-bottom: 1rem;
+}
+
+.hero h1 em {
+color: var(–gold);
+font-style: italic;
+}
+
+.hero-tagline {
+font-size: 1.1rem;
+color: rgba(255,255,255,0.65);
+font-weight: 300;
+letter-spacing: 0.05em;
+margin-bottom: 3rem;
+}
+
+.hero-intro {
+font-size: 1.05rem;
+color: rgba(255,255,255,0.8);
+line-height: 1.8;
+max-width: 600px;
+margin: 0 auto 3rem;
+font-weight: 300;
+}
+
+.hero-buttons {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.btn-primary {
+background: var(–gold);
+color: var(–navy-deep);
+padding: 1rem 2.5rem;
+border: none;
+font-family: ‘Jost’, sans-serif;
+font-size: 0.9rem;
+font-weight: 600;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-decoration: none;
+cursor: pointer;
+transition: all 0.3s;
+display: inline-block;
+}
+
+.btn-primary:hover {
+background: var(–gold-light);
+transform: translateY(-2px);
+}
+
+.btn-outline {
+background: transparent;
+color: var(–white);
+padding: 1rem 2.5rem;
+border: 1px solid rgba(255,255,255,0.4);
+font-family: ‘Jost’, sans-serif;
+font-size: 0.9rem;
+font-weight: 400;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-decoration: none;
+cursor: pointer;
+transition: all 0.3s;
+display: inline-block;
+}
+
+.btn-outline:hover {
+border-color: var(–gold);
+color: var(–gold);
+}
+
+/* FREE OFFER BANNER */
+.free-banner {
+background: var(–gold);
+padding: 1.5rem 2rem;
+text-align: center;
+}
+
+.free-banner p {
+color: var(–navy-deep);
+font-weight: 600;
+font-size: 1rem;
+letter-spacing: 0.02em;
+}
+
+.free-banner p span {
+font-weight: 300;
+display: block;
+font-size: 0.9rem;
+margin-top: 0.25rem;
+}
+
+/* SECTIONS */
+section {
+padding: 6rem 2rem;
+}
+
+.section-inner {
+max-width: 900px;
+margin: 0 auto;
+}
+
+.section-label {
+font-size: 0.75rem;
+font-weight: 600;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 1rem;
+display: block;
+}
+
+.section-title {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: clamp(2.2rem, 4vw, 3.5rem);
+font-weight: 300;
+color: var(–navy);
+line-height: 1.2;
+margin-bottom: 2rem;
+}
+
+.section-title em {
+color: var(–gold);
+font-style: italic;
+}
+
+.section-body {
+font-size: 1.05rem;
+line-height: 1.9;
+color: var(–text-mid);
+font-weight: 300;
+}
+
+.section-body p { margin-bottom: 1.5rem; }
+
+/* WHY */
+.why-section {
+background: var(–navy);
+color: var(–white);
+}
+
+.why-section .section-title {
+color: var(–white);
+}
+
+.why-section .section-body {
+color: rgba(255,255,255,0.75);
+}
+
+.why-quote {
+border-left: 3px solid var(–gold);
+padding: 1.5rem 2rem;
+margin: 3rem 0;
+background: rgba(201,168,76,0.08);
+}
+
+.why-quote p {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.4rem;
+font-style: italic;
+color: var(–gold-light);
+line-height: 1.6;
+font-weight: 300;
+}
+
+/* SERVICES */
+.services-section {
+background: var(–cream);
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+margin-top: 3rem;
+}
+
+.service-card {
+background: var(–white);
+border: 1px solid rgba(27,42,74,0.1);
+padding: 2.5rem;
+position: relative;
+transition: all 0.3s;
+}
+
+.service-card::before {
+content: ‘’;
+position: absolute;
+top: 0; left: 0;
+width: 3px;
+height: 100%;
+background: var(–gold);
+transform: scaleY(0);
+transition: transform 0.3s;
+transform-origin: bottom;
+}
+
+.service-card:hover::before { transform: scaleY(1); }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(27,42,74,0.1); }
+
+.service-icon {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.service-card h3 {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.5rem;
+font-weight: 600;
+color: var(–navy);
+margin-bottom: 1rem;
+}
+
+.service-card p {
+font-size: 0.95rem;
+line-height: 1.7;
+color: var(–text-mid);
+font-weight: 300;
+margin-bottom: 1.5rem;
+}
+
+.service-list {
+list-style: none;
+margin-bottom: 1.5rem;
+}
+
+.service-list li {
+font-size: 0.9rem;
+color: var(–text-mid);
+padding: 0.4rem 0;
+padding-left: 1.2rem;
+position: relative;
+font-weight: 300;
+}
+
+.service-list li::before {
+content: ‘✦’;
+position: absolute;
+left: 0;
+color: var(–gold);
+font-size: 0.6rem;
+top: 0.55rem;
+}
+
+.service-price {
+font-size: 0.85rem;
+font-weight: 600;
+color: var(–navy);
+letter-spacing: 0.05em;
+text-transform: uppercase;
+border-top: 1px solid rgba(27,42,74,0.1);
+padding-top: 1rem;
+}
+
+/* PRICING PHILOSOPHY */
+.pricing-philosophy {
+background: var(–navy-deep);
+padding: 5rem 2rem;
+text-align: center;
+}
+
+.pricing-philosophy .section-inner {
+max-width: 700px;
+}
+
+.pricing-philosophy .section-title {
+color: var(–white);
+}
+
+.pricing-philosophy .section-body {
+color: rgba(255,255,255,0.75);
+text-align: left;
+}
+
+.pricing-philosophy-highlight {
+background: rgba(201,168,76,0.1);
+border: 1px solid rgba(201,168,76,0.3);
+padding: 2rem;
+margin-top: 2rem;
+text-align: left;
+}
+
+.pricing-philosophy-highlight p {
+color: var(–gold-light);
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.3rem;
+font-style: italic;
+line-height: 1.7;
+font-weight: 300;
+}
+
+/* ABOUT */
+.about-section {
+background: var(–white);
+}
+
+.about-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 5rem;
+align-items: center;
+}
+
+.about-badge {
+background: var(–navy);
+padding: 3rem;
+text-align: center;
+position: relative;
+}
+
+.about-badge::after {
+content: ‘’;
+position: absolute;
+bottom: -15px;
+right: -15px;
+width: 100%;
+height: 100%;
+border: 2px solid var(–gold);
+z-index: -1;
+}
+
+.about-badge-name {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 2.5rem;
+font-weight: 300;
+color: var(–white);
+margin-bottom: 0.5rem;
+}
+
+.about-badge-title {
+font-size: 0.8rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–gold);
+font-weight: 500;
+}
+
+.about-badge-details {
+margin-top: 2rem;
+padding-top: 2rem;
+border-top: 1px solid rgba(201,168,76,0.3);
+}
+
+.about-badge-details p {
+font-size: 0.85rem;
+color: rgba(255,255,255,0.65);
+line-height: 1.7;
+font-weight: 300;
+}
+
+/* ONLINE ONLY */
+.online-section {
+background: var(–gold-pale);
+padding: 4rem 2rem;
+text-align: center;
+}
+
+.online-section .section-inner {
+max-width: 700px;
+}
+
+.online-badges {
+display: flex;
+justify-content: center;
+gap: 2rem;
+flex-wrap: wrap;
+margin-top: 2rem;
+}
+
+.online-badge {
+background: var(–white);
+padding: 1rem 1.5rem;
+font-size: 0.85rem;
+font-weight: 500;
+color: var(–navy);
+letter-spacing: 0.05em;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+/* DISCLAIMER */
+.disclaimer-section {
+background: var(–cream);
+padding: 4rem 2rem;
+}
+
+.disclaimer-box {
+background: var(–white);
+border: 1px solid rgba(27,42,74,0.1);
+border-left: 4px solid var(–navy);
+padding: 2.5rem;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.disclaimer-box h3 {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.4rem;
+color: var(–navy);
+margin-bottom: 1rem;
+}
+
+.disclaimer-box p {
+font-size: 0.9rem;
+line-height: 1.8;
+color: var(–text-mid);
+font-weight: 300;
+margin-bottom: 1rem;
+}
+
+.disclaimer-list {
+list-style: none;
+margin: 1rem 0;
+}
+
+.disclaimer-list li {
+font-size: 0.9rem;
+color: var(–text-mid);
+padding: 0.3rem 0;
+padding-left: 1.5rem;
+position: relative;
+font-weight: 300;
+}
+
+.disclaimer-list li::before {
+content: ‘✓’;
+position: absolute;
+left: 0;
+color: var(–gold);
+font-weight: 600;
+}
+
+/* CONTACT */
+.contact-section {
+background: var(–navy);
+padding: 6rem 2rem;
+text-align: center;
+}
+
+.contact-section .section-title {
+color: var(–white);
+}
+
+.contact-section .section-body {
+color: rgba(255,255,255,0.75);
+text-align: center;
+}
+
+.free-review-box {
+background: rgba(201,168,76,0.12);
+border: 1px solid rgba(201,168,76,0.4);
+padding: 2.5rem;
+margin: 3rem auto;
+max-width: 600px;
+text-align: left;
+}
+
+.free-review-box h3 {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.6rem;
+color: var(–gold);
+margin-bottom: 1rem;
+}
+
+.free-review-box p {
+color: rgba(255,255,255,0.8);
+font-size: 0.95rem;
+line-height: 1.8;
+font-weight: 300;
+}
+
+.contact-methods {
+display: flex;
+justify-content: center;
+gap: 2rem;
+flex-wrap: wrap;
+margin: 2rem 0 3rem;
+}
+
+.contact-method {
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(255,255,255,0.15);
+padding: 1.5rem 2rem;
+text-align: center;
+min-width: 180px;
+}
+
+.contact-method-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+.contact-method p {
+font-size: 0.8rem;
+color: rgba(255,255,255,0.5);
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 0.25rem;
+}
+
+.contact-method a, .contact-method span {
+color: var(–gold);
+font-size: 0.95rem;
+text-decoration: none;
+font-weight: 400;
+}
+
+.process-steps {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+gap: 1rem;
+margin: 2rem auto;
+max-width: 800px;
+text-align: left;
+}
+
+.process-step {
+padding: 1.5rem;
+background: rgba(255,255,255,0.04);
+border-top: 2px solid var(–gold);
+}
+
+.process-step-num {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 2rem;
+color: var(–gold);
+font-weight: 300;
+display: block;
+margin-bottom: 0.5rem;
+}
+
+.process-step p {
+font-size: 0.85rem;
+color: rgba(255,255,255,0.65);
+line-height: 1.5;
+font-weight: 300;
+}
+
+.confidentiality-note {
+max-width: 600px;
+margin: 2rem auto 0;
+padding: 1.5rem;
+border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.confidentiality-note p {
+font-size: 0.85rem;
+color: rgba(255,255,255,0.5);
+line-height: 1.7;
+font-weight: 300;
+}
+
+/* FOOTER */
+footer {
+background: var(–navy-deep);
+padding: 2rem;
+text-align: center;
+border-top: 1px solid rgba(201,168,76,0.2);
+}
+
+footer p {
+font-size: 0.8rem;
+color: rgba(255,255,255,0.4);
+line-height: 1.7;
+}
+
+footer span { color: var(–gold); }
+
+/* DIVIDER */
+.gold-divider {
+width: 60px;
+height: 2px;
+background: var(–gold);
+margin: 1.5rem 0;
+}
+
+.gold-divider.centered { margin: 1.5rem auto; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.nav-links { display: none; }
+.about-grid { grid-template-columns: 1fr; gap: 2rem; }
+.about-badge::after { display: none; }
+.hero h1 { font-size: 2.8rem; }
+section { padding: 4rem 1.5rem; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAV -->
+
+<nav>
+  <div class="nav-logo">Vee <span>Writes</span></div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-eyebrow">Professional Writing & Advocacy Services</span>
+    <h1>Vee Writes —<br><em>Your Voice.</em><br>Professionally Heard.</h1>
+    <p class="hero-tagline">Based in Carmarthenshire · Serving Wales & Beyond · Fully Remote</p>
+    <p class="hero-intro">
+      Sometimes the hardest thing isn't knowing what you want to say — it's finding the words that make people listen. That's where I come in.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Get Free Letter Review</a>
+      <a href="#services" class="btn-outline">See What I Do</a>
+    </div>
+  </div>
+</section>
+
+<!-- FREE OFFER BANNER -->
+
+<div class="free-banner">
+  <p>
+    🎁 Free Letter Review — Send me any letter or decision notice.
+    <span>I'll tell you honestly what your options are. No cost. No obligation. Ever.</span>
+  </p>
+</div>
+
+<!-- SERVICES -->
+
+<section class="services-section" id="services">
+  <div class="section-inner">
+    <span class="section-label">What I Do</span>
+    <h2 class="section-title">Three Ways I Can <em>Help You</em></h2>
+    <div class="gold-divider"></div>
+    <p class="section-body">Whether you're fighting a system, building a career, growing a business, or trying to find your academic voice — I write the words that get results.</p>
+
+```
+<div class="services-grid">
+
+  <!-- ADVOCACY -->
+  <div class="service-card">
+    <div class="service-icon">✉️</div>
+    <h3>Advocacy & Appeal Letters</h3>
+    <p>When you've received a decision that doesn't feel right and you need to push back — professionally, clearly, and confidently.</p>
+    <ul class="service-list">
+      <li>Universal Credit & PIP reconsiderations</li>
+      <li>DWP appeal letters</li>
+      <li>Housing association complaints</li>
+      <li>School exclusion & non-attendance appeals</li>
+      <li>EBSA & special educational needs correspondence</li>
+      <li>Council tax disputes & payment arrangement requests</li>
+      <li>Bailiff challenge letters & debt correspondence</li>
+      <li>NHS & social services complaints</li>
+      <li>Council correspondence</li>
+    </ul>
+    <div class="service-price">
+      Starter from £30 · Complex from £45 · Full Package from £120
+    </div>
+  </div>
+
+  <!-- STUDENT SUPPORT -->
+  <div class="service-card">
+    <div class="service-icon">📚</div>
+    <h3>Student Support</h3>
+    <p>You know your subject. Getting it onto the page in a way that hits the marks — that's a different skill. I help you find your academic voice and use it confidently.</p>
+    <ul class="service-list">
+      <li>Assignment brief breakdown</li>
+      <li>Draft proofreading & honest feedback</li>
+      <li>Harvard referencing & formatting</li>
+      <li>Feedback decoder for resubmissions</li>
+      <li>Study skills coaching sessions</li>
+    </ul>
+    <p style="font-size:0.85rem; color: var(--navy); font-style: italic;">For counselling, social work, nursing, healthcare, education students — and anyone returning to study after time away.</p>
+    <div class="service-price">
+      From £15 · Coaching sessions from £35
+    </div>
+  </div>
+
+  <!-- BUSINESS WRITING -->
+  <div class="service-card">
+    <div class="service-icon">💼</div>
+    <h3>Business Writing</h3>
+    <p>You're brilliant at what you do. But does your written communication reflect that? I help small businesses and sole traders sound as professional on paper as they are in person.</p>
+    <ul class="service-list">
+      <li>Professional emails & correspondence</li>
+      <li>Quotes, proposals & templates</li>
+      <li>Complaint & response letters</li>
+      <li>Staff communications & HR letters</li>
+      <li>Policy documents in plain English</li>
+      <li>CV & job application writing</li>
+    </ul>
+    <div class="service-price">
+      From £35 · Retainer packages available
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+<!-- PRICING PHILOSOPHY -->
+
+<section class="pricing-philosophy" id="pricing">
+  <div class="section-inner">
+    <span class="section-label">My Pricing Philosophy</span>
+    <h2 class="section-title" style="color:var(--white);">Affordable by <em>Design</em></h2>
+    <div class="gold-divider centered"></div>
+    <div class="section-body">
+      <p>I keep my prices low — deliberately and without apology.</p>
+      <p>I know from my own experience what it feels like to need help and not be able to afford it. To sit with an official letter you don't understand, to watch an opportunity pass you by because you didn't have the right words, to feel like the system was written in a language you were never taught.</p>
+      <p>I spent years figuring things out for myself because there was no one to help me. I learned the hard way — and that experience is exactly why I do this work.</p>
+      <p>The people who need advocacy and writing support the most are often the people with the least money to spend on it. I refuse to price them out.</p>
+    </div>
+    <div class="pricing-philosophy-highlight">
+      <p>"Everyone deserves to be seen, heard, and taken seriously — regardless of their background, their bank balance, or their confidence level. That belief is in everything I write."</p>
+    </div>
+    <div style="margin-top:2rem;">
+      <p style="color:rgba(255,255,255,0.6); font-size:0.9rem; font-weight:300;">If you're in a difficult financial situation, please get in touch and we'll have an honest conversation about what's possible. I would rather help you than not.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+
+<section class="why-section">
+  <div class="section-inner">
+    <span class="section-label">Why It Matters</span>
+    <h2 class="section-title">The Right Words <em>Change Things</em></h2>
+    <div class="gold-divider"></div>
+    <div class="section-body">
+      <p>A well-written letter can be the difference between a PIP award and a refusal. Between a job interview and a rejection. Between being ignored and being taken seriously.</p>
+      <p>It's rarely about what you say. It's about how you say it — and whether the person reading it believes you mean business.</p>
+      <p>That's not fair. But it's real. And it's exactly why this service exists.</p>
+    </div>
+    <div class="why-quote">
+      <p>"I've spent years working alongside people who've been overlooked by systems that were supposed to help them. I know what it feels like to face an official letter and not know where to start. I know how much is riding on getting it right."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-badge">
+        <div class="about-badge-name">Vee</div>
+        <div class="about-badge-title">Professional Writer & Advocate</div>
+        <div class="about-badge-details">
+          <p>Counselling & Social Services Background</p>
+          <p style="margin-top:1rem;">Lived experience navigating EBSA, school systems, benefits, and family advocacy</p>
+          <p style="margin-top:1rem;">Active in community mental health & social services</p>
+          <p style="margin-top:1rem; color: var(--gold); font-size:0.8rem;">Carmarthenshire</p>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">About Vee</span>
+        <h2 class="section-title">I'm Not Just a Writer.<br><em>I Get It.</em></h2>
+        <div class="gold-divider"></div>
+        <div class="section-body">
+          <p>I'm a 48-year-old single mum from Carmarthenshire, with a background in counselling and social services. I know what it's like to sit across from a system that doesn't see you — and to need help but not know how to ask for it in a way that gets heard.</p>
+          <p>I've been there personally. I spent years fighting for my son — through schools that didn't understand his needs, through what we now know was Emotionally Based School Avoidance (EBSA), through court proceedings for non-attendance that never should have happened, through benefits systems and assessments that felt designed to break you down rather than support you. I've dealt with council tax demands, bailiff letters, and the particular kind of panic that comes with an official envelope dropping through your door when you're already at your limit.</p>
+          <p>Nobody told me what my rights were. Nobody helped me put what I knew into words that the system would take seriously. I figured it out the hard way — and my son and I paid the price for that.</p>
+          <p>If I had known then what I know now, things would have been very different. The schools would not have got away with what they put us through. And that's exactly why I do this work.</p>
+          <p>My counselling and support services background has given me something most writers don't have — a deep understanding of how people think, feel, and communicate under pressure. I know how to listen. I know how to translate. And I know how it feels to be on the wrong side of a system that holds all the power.</p>
+          <p>I started Vee Writes because too many people in this part of Wales are losing appeals they should win, missing jobs they're perfect for, and going unheard by systems designed to wear them down. I can do something about that.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ONLINE ONLY -->
+
+<div class="online-section">
+  <div class="section-inner">
+    <span class="section-label">How We Work</span>
+    <h2 class="section-title" style="font-size:2rem; margin-bottom:0.5rem;">Fully Remote. Completely Flexible.</h2>
+    <p style="color: var(--text-mid); font-size:0.95rem; font-weight:300;">Vee Writes is an entirely online service. No face-to-face appointments. No travel. No waiting rooms.</p>
+    <div class="online-badges">
+      <div class="online-badge">📧 Email</div>
+      <div class="online-badge">💬 WhatsApp</div>
+      <div class="online-badge">📹 Video Call</div>
+      <div class="online-badge">🌍 Nationwide</div>
+    </div>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+
+<section class="disclaimer-section">
+  <div class="disclaimer-box">
+    <h3>A Note On Outcomes & Legal Position</h3>
+    <p>Let me be straight with you. Every letter I write will be thorough, well-argued, professionally presented, and written with everything I've got. I don't do half-measures. Your case will be made as powerfully and clearly as it possibly can be.</p>
+    <p><strong>But I cannot guarantee outcomes.</strong> Decisions ultimately rest with the DWP, local councils, housing associations, and other organisations — and that's outside my control. What I can tell you is that a well-crafted, confident, professionally written letter gives you a significantly better chance of being heard than going in without one.</p>
+    <p>What I guarantee every single time:</p>
+    <ul class="disclaimer-list">
+      <li>A letter that is clear, compelling, and professionally written</li>
+      <li>Your situation represented accurately and with real weight behind it</li>
+      <li>Complete respect, discretion, and honesty throughout</li>
+      <li>My genuine best effort — every time, no exceptions</li>
+    </ul>
+    <p style="margin-top:1.5rem; padding-top:1.5rem; border-top: 1px solid rgba(27,42,74,0.1); font-size:0.9rem;"><strong>Important — Please Read:</strong></p>
+    <p style="font-size:0.9rem;">Vee Writes is a <strong>writing and communication service only</strong>. I am not a solicitor, legal adviser, or regulated benefits adviser. I do not provide legal advice, and nothing I write or say should be taken as legal advice.</p>
+    <p style="font-size:0.9rem;">What I do is help you tell your story clearly, professionally, and powerfully in writing. The letter is yours — I am simply the person who helps you put it into words that get heard.</p>
+    <p style="font-size:0.9rem;">If your situation requires regulated legal advice, I will always tell you honestly and signpost you to the appropriate support — including <strong>Citizens Advice</strong>, a qualified solicitor, or relevant specialist services. I would rather point you in the right direction than overstep what I am here to do.</p>
+    <p style="font-size:0.85rem; color: var(--text-mid); margin-top:1rem;"><em>For free legal advice: <strong>Citizens Advice</strong> — citizensadvice.org.uk | 0800 144 8848</em></p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+  <div class="section-inner">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">No Jargon. No Judgment.<br><em>Just a Conversation.</em></h2>
+    <div class="gold-divider centered"></div>
+
+```
+<div class="free-review-box">
+  <h3>🎁 Free Letter Review</h3>
+  <p>Not sure where to start? Send me whatever you've received — any letter, any decision, any situation you don't know how to respond to. I'll review it completely free of charge and tell you exactly what your options are. No cost. No obligation. No jargon. Just a straight, honest answer.</p>
+</div>
+
+<div class="contact-methods">
+  <div class="contact-method">
+    <div class="contact-method-icon">📧</div>
+    <p>Email</p>
+    <a href="mailto:hello@veewrites.co.uk">hello@veewrites.co.uk</a>
+  </div>
+  <div class="contact-method">
+    <div class="contact-method-icon">💬</div>
+    <p>WhatsApp</p>
+    <span>Your number here</span>
+  </div>
+  <div class="contact-method">
+    <div class="contact-method-icon">📘</div>
+    <p>Facebook</p>
+    <a href="#">@VeeWrites</a>
+  </div>
+</div>
+
+<div class="process-steps">
+  <div class="process-step">
+    <span class="process-step-num">01</span>
+    <p>Get in touch via email, WhatsApp, or Facebook</p>
+  </div>
+  <div class="process-step">
+    <span class="process-step-num">02</span>
+    <p>Send me any relevant letters or documents</p>
+  </div>
+  <div class="process-step">
+    <span class="process-step-num">03</span>
+    <p>I'll respond within 24 hours with my honest assessment</p>
+  </div>
+  <div class="process-step">
+    <span class="process-step-num">04</span>
+    <p>Clear quote given — no hidden costs, no pressure</p>
+  </div>
+  <div class="process-step">
+    <span class="process-step-num">05</span>
+    <p>You decide. No obligation. Ever.</p>
+  </div>
+</div>
+
+<a href="mailto:hello@veewrites.co.uk" class="btn-primary">Send Me A Message</a>
+
+<div class="confidentiality-note">
+  <p>🔒 Everything you share with me is treated with complete discretion. I understand that the situations behind these letters are often deeply personal. Your story is safe with me — always. Your information will never be shared with anyone, for any reason.</p>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- SAMPLE LETTERS -->
+
+<section style="background: var(--cream); padding: 6rem 2rem;">
+  <div class="section-inner">
+    <span class="section-label">Sample Letters</span>
+    <h2 class="section-title">See The <em>Quality</em> For Yourself</h2>
+    <div class="gold-divider"></div>
+    <p class="section-body" style="margin-bottom:3rem;">Every letter I write is thorough, legally referenced, and professionally presented. These samples show you exactly what you'll receive. All names and details are entirely fictional.</p>
+
+```
+<!-- LETTER TABS -->
+<div class="letter-tabs">
+  <button class="letter-tab active" onclick="showLetter(0)">PIP — Fibromyalgia</button>
+  <button class="letter-tab" onclick="showLetter(1)">PIP — Autism</button>
+  <button class="letter-tab" onclick="showLetter(2)">Council Tax & Bailiffs</button>
+  <button class="letter-tab" onclick="showLetter(3)">EBSA & School</button>
+  <button class="letter-tab" onclick="showLetter(4)">LCWRA Appeal</button>
+</div>
+
+<!-- LETTER 1 -->
+<div class="letter-container active" id="letter-0">
+  <div class="letter-watermark">SAMPLE</div>
+  <div class="letter-content">
+    <div class="letter-header">
+      <h3>PERSONAL INDEPENDENCE PAYMENT — MANDATORY RECONSIDERATION REQUEST</h3>
+      <p><strong>Name:</strong> Sarah Mitchell &nbsp;|&nbsp; <strong>DOB:</strong> 14 March 1978</p>
+      <p><strong>NI Number:</strong> AB 12 34 56 C &nbsp;|&nbsp; <strong>Reference:</strong> PIP/2024/447821</p>
+      <p><strong>Date:</strong> 17 April 2025</p>
+    </div>
+    <p>To Whom It May Concern,</p>
+    <p>I am writing to formally request a mandatory reconsideration of the decision made on 3 April 2025 to award me zero points under both the Daily Living and Mobility components of Personal Independence Payment. I believe this decision does not accurately reflect the full extent of my conditions or the impact they have on my daily life, and I respectfully request that it be reviewed in full.</p>
+    <p><strong>My Conditions</strong></p>
+    <p>I have been diagnosed with fibromyalgia and generalised anxiety disorder by my GP, Dr. Anwar Hussain. Both conditions are long-term, fluctuating in nature, and significantly affect my ability to carry out everyday tasks safely, reliably, repeatedly, and without pain — the full legal standard required under PIP assessment criteria.</p>
+    <p>I would draw the decision maker's attention to the fact that under the PIP assessment regulations, activities must be assessed against whether they can be completed safely, to an acceptable standard, repeatedly, and within a reasonable time period. I respectfully submit that I am unable to meet this standard across multiple activity descriptors.</p>
+    <p><strong>Why I Believe the Decision is Wrong</strong></p>
+    <p>The assessment did not reflect my condition on a typical day. Like many people with fibromyalgia, my symptoms fluctuate significantly — however the assessment appeared to be based solely on my presentation on that single day, rather than my overall functional ability across a range of days. This is not consistent with the DWP's own guidance on fluctuating conditions.</p>
+    <p><em>Preparing food:</em> I am unable to prepare a cooked meal safely without assistance. Due to chronic pain in my hands and arms I cannot safely hold or manage kitchen equipment for any sustained period. On my worst days — which occur at least four times per week — I am unable to stand at a cooker at all. I would submit that this satisfies descriptor 1b at a minimum, attracting two points.</p>
+    <p><em>Managing medication:</em> I require daily reminders to take my medication due to the cognitive effects of fibromyalgia, commonly known as fibro fog. Without prompting I regularly forget doses which significantly worsens my symptoms. I would submit this satisfies descriptor 7b, attracting one point.</p>
+    <p><em>Moving around:</em> I am unable to walk more than 20 metres without significant pain. I use a walking aid on most days and have fallen on three occasions in the past six months. I would submit this satisfies descriptor E under the Mobility component, attracting ten points and qualifying me for the enhanced rate.</p>
+    <p><strong>Supporting Evidence</strong></p>
+    <p>In support of this reconsideration I am enclosing the following: a letter from my GP confirming my diagnoses and their impact; a physiotherapy report dated January 2025; a letter from my counsellor Jane Davies MBACP confirming the psychological impact and level of support required; and a personal statement from my daughter confirming the daily practical assistance she provides.</p>
+    <p><strong>Legal Basis</strong></p>
+    <p>Under the Social Security (Personal Independence Payment) Regulations 2013 the assessment must consider whether activities can be carried out safely, to an acceptable standard, repeatedly, and within a reasonable time. I submit the original assessment failed to apply this standard correctly. Furthermore under the Equality Act 2010 I am a disabled person entitled to have my conditions considered in full.</p>
+    <p>I respectfully ask that this decision be reconsidered in full. If this reconsideration is unsuccessful I wish it to be noted that I intend to appeal to the First-tier Tribunal.</p>
+    <p>Yours faithfully,<br><strong>Sarah Mitchell</strong></p>
+  </div>
+</div>
+
+<!-- LETTER 2 -->
+<div class="letter-container" id="letter-1">
+  <div class="letter-watermark">SAMPLE</div>
+  <div class="letter-content">
+    <div class="letter-header">
+      <h3>PERSONAL INDEPENDENCE PAYMENT — MANDATORY RECONSIDERATION REQUEST</h3>
+      <p><strong>Name:</strong> James Cooper &nbsp;|&nbsp; <strong>DOB:</strong> 22 September 1990</p>
+      <p><strong>NI Number:</strong> CD 98 76 54 E &nbsp;|&nbsp; <strong>Reference:</strong> PIP/2024/583921</p>
+      <p><strong>Date:</strong> 17 April 2025</p>
+    </div>
+    <p>To Whom It May Concern,</p>
+    <p>I am writing to formally request a mandatory reconsideration of the decision made on 28 March 2025 to award me zero points under both the Daily Living and Mobility components of Personal Independence Payment. I believe this decision fails to adequately consider my diagnosis, my legal rights under the Equality Act 2010, and the significant impact my condition has on my ability to carry out daily activities safely and consistently.</p>
+    <p><strong>My Condition</strong></p>
+    <p>I am autistic. I was formally diagnosed with Autism Spectrum Condition (ASC) by Dr. Patricia Owens, Consultant Psychiatrist, in October 2023. I also have co-occurring diagnoses of Pathological Demand Avoidance (PDA), sensory processing disorder, and anxiety disorder — all directly connected to and exacerbated by my autism. Autism is a lifelong neurological condition recognised under the Equality Act 2010 as a disability.</p>
+    <p><strong>My Legal Rights — Equality Act 2010</strong></p>
+    <p>Under the Equality Act 2010 I am a disabled person. The Act places a legal duty on public bodies — including the DWP — to make reasonable adjustments to ensure that disabled people are not placed at a substantial disadvantage. The assessment did not make adequate reasonable adjustments for my autism. I was not given written questions in advance despite requesting this. The assessment did not account for autistic masking or the post-assessment shutdown I experienced for three days following the appointment.</p>
+    <p><strong>Autistic Masking</strong></p>
+    <p>Research consistently demonstrates that many autistic people present as more capable in assessment settings than they are in everyday life. This is not deliberate misrepresentation — it is an involuntary and exhausting coping mechanism. The consequences include post-assessment burnout, increased anxiety, and deterioration in mental health — all of which I experienced. The assessor's observations cannot be taken as an accurate representation of my day to day functioning.</p>
+    <p><strong>Legal Basis</strong></p>
+    <p>I rely on the Equality Act 2010, the Social Security (PIP) Regulations 2013, the UN Convention on the Rights of Persons with Disabilities Article 19, and the DWP PIP Assessment Guide which specifically acknowledges fluctuating and hidden conditions. I submit that placing me in the LCWRA group is required under Regulation 35 given the substantial risk that work related activity would pose to my mental health.</p>
+    <p>If this reconsideration is unsuccessful I intend to appeal to the First-tier Tribunal and will be seeking advice from a disability rights organisation in preparation for doing so.</p>
+    <p>Yours faithfully,<br><strong>James Cooper</strong></p>
+  </div>
+</div>
+
+<!-- LETTER 3 -->
+<div class="letter-container" id="letter-2">
+  <div class="letter-watermark">SAMPLE</div>
+  <div class="letter-content">
+    <div class="letter-header">
+      <h3>COUNCIL TAX ACCOUNT — FORMAL CHALLENGE & BAILIFF INTERVENTION REQUEST</h3>
+      <p><strong>Name:</strong> Michelle Davies &nbsp;|&nbsp; <strong>Account Ref:</strong> CT/2024/887432</p>
+      <p><strong>Address:</strong> 14 Heol yr Ysgol, Pontardawe, SA8 4TN</p>
+      <p><strong>Date:</strong> 17 April 2025</p>
+    </div>
+    <p>To Whom It May Concern,</p>
+    <p>I am writing formally to challenge the enforcement action currently being taken against me in respect of the above council tax account, and to request the immediate recall of the bailiff warrant issued in this matter. I am also requesting that the council enter into a formal affordable payment arrangement with me as a matter of urgency.</p>
+    <p>I wish to make clear from the outset that I am not disputing that council tax is owed. I am disputing the manner in which this debt has been handled, the failure to consider my personal circumstances, and the disproportionate escalation to bailiff enforcement without adequate opportunity for me to engage with the council directly.</p>
+    <p><strong>Grounds for Challenge</strong></p>
+    <p><em>Failure to consider vulnerability:</em> Under the National Standards for Enforcement Agents 2014 and the Local Government Finance Act 1992, local authorities have a duty to identify and make allowances for vulnerable individuals. As a single parent in receipt of means-tested benefits I am considered a vulnerable person. I submit that this vulnerability was not adequately considered before escalating to bailiff enforcement.</p>
+    <p><em>Failure to offer a payment arrangement:</em> Prior to the instruction of bailiffs I was not offered a formal opportunity to enter into a payment arrangement. The Ministry of Justice's Taking Control of Goods regulations require that debtors be given reasonable opportunity to pay before enforcement action is taken. I submit this process was not followed correctly.</p>
+    <p><strong>My Legal Rights</strong></p>
+    <p>Under the Taking Control of Goods Regulations 2013 bailiffs must follow a strict process before entering a property. Under the Human Rights Act 1998 Article 8, enforcement action disproportionately impacting a family with dependent children must be carefully considered. Under the Equality Act 2010 I am entitled to have my circumstances considered fully throughout this process.</p>
+    <p><strong>What I Am Requesting</strong></p>
+    <p>I formally request: the immediate recall of the bailiff warrant; the freezing of all additional bailiff fees; a formal affordable payment arrangement of £10 per month reflecting my genuine financial position; and written confirmation that no further enforcement action will be taken while a payment arrangement is maintained.</p>
+    <p>If the council is unwilling to act I intend to submit a formal complaint, refer this matter to the Local Government and Social Care Ombudsman, and seek further legal advice.</p>
+    <p>Yours faithfully,<br><strong>Michelle Davies</strong></p>
+  </div>
+</div>
+
+<!-- LETTER 4 -->
+<div class="letter-container" id="letter-3">
+  <div class="letter-watermark">SAMPLE</div>
+  <div class="letter-content">
+    <div class="letter-header">
+      <h3>FORMAL CHALLENGE — SCHOOL NON-ATTENDANCE PROSECUTION & EBSA REPRESENTATION</h3>
+      <p><strong>Name:</strong> Karen Thomas &nbsp;|&nbsp; <strong>Child:</strong> Owen Thomas, DOB 3 June 2013</p>
+      <p><strong>School:</strong> Ysgol y Dyffryn, Llandeilo</p>
+      <p><strong>Date:</strong> 17 April 2025</p>
+    </div>
+    <p>To Whom It May Concern,</p>
+    <p>I am writing formally to challenge the decision to pursue prosecution against me for my son Owen's non-attendance at school, and to request the immediate withdrawal of the Fixed Penalty Notice issued on 14 March 2025. I am also requesting that the local authority and school fulfil their legal duties in respect of my son's identified special educational needs and his diagnosis of Emotionally Based School Avoidance.</p>
+    <p>I wish to make clear from the outset that I have not wilfully neglected my son's education. I am a parent who has been desperately trying to get the right support for a child who is genuinely and significantly unable to attend school due to a recognised medical and psychological condition. The failure here is not mine. The failure is the system's.</p>
+    <p><strong>Legal Grounds</strong></p>
+    <p><em>Section 19, Education Act 1996:</em> The local authority has a legal duty to provide suitable full-time education for children unable to attend school due to illness. Owen has been unable to attend due to a recognised medical condition. The local authority has failed to fulfil this duty — no alternative provision, home tuition, or suitable education has been offered during his absence.</p>
+    <p><em>Equality Act 2010:</em> Owen is a disabled child awaiting formal autism assessment. The school has a legal duty to make reasonable adjustments. Despite my repeated requests the school has failed to implement a reintegration plan, provide a safe space, or engage meaningfully with CAMHS recommendations. These failures have directly contributed to Owen's inability to attend.</p>
+    <p><em>Welsh Government Guidance:</em> Statutory guidance on anxiety related school non-attendance makes clear that prosecution of parents is not appropriate where non-attendance is rooted in a recognised medical or psychological condition. The school and local authority have failed to follow this guidance.</p>
+    <p><strong>What I Am Requesting</strong></p>
+    <p>I formally request: the immediate withdrawal of the Fixed Penalty Notice; withdrawal of any prosecution threat; the local authority to fulfil its Section 19 duty immediately; a formal meeting to develop a therapeutic reintegration plan; and written confirmation of reasonable adjustments under the Equality Act 2010.</p>
+    <p>If unsuccessful I intend to complain to the Public Services Ombudsman for Wales, seek legal advice regarding judicial review, and contact my local Assembly Member.</p>
+    <p>I am not a negligent parent. I am a mother who has fought every single day for her son. I will continue to fight — and I will use every legal avenue available to me to ensure he gets the support he is entitled to.</p>
+    <p>Yours faithfully,<br><strong>Karen Thomas</strong></p>
+  </div>
+</div>
+
+<!-- LETTER 5 -->
+<div class="letter-container" id="letter-4">
+  <div class="letter-watermark">SAMPLE</div>
+  <div class="letter-content">
+    <div class="letter-header">
+      <h3>UNIVERSAL CREDIT — LCWRA MANDATORY RECONSIDERATION REQUEST</h3>
+      <p><strong>Name:</strong> David Brennan &nbsp;|&nbsp; <strong>DOB:</strong> 8 November 1975</p>
+      <p><strong>NI Number:</strong> EF 45 67 89 G &nbsp;|&nbsp; <strong>Reference:</strong> UC/2024/664521</p>
+      <p><strong>Date:</strong> 17 April 2025</p>
+    </div>
+    <p>To Whom It May Concern,</p>
+    <p>I am writing to formally request a mandatory reconsideration of the decision made on 1 April 2025 that I do not have Limited Capability for Work and Work-Related Activity. I believe this decision does not accurately reflect the full extent of my conditions, their impact on my ability to work, or my legal entitlements under the Universal Credit regulations.</p>
+    <p><strong>My Conditions</strong></p>
+    <p>I have been diagnosed with severe depression and anxiety disorder, Post Traumatic Stress Disorder, chronic back pain and degenerative disc disease, and Type 2 diabetes with associated neuropathy. These conditions are long-term, serious, and significantly affect my ability to function on a daily basis.</p>
+    <p><strong>Substantial Risk — Regulation 35</strong></p>
+    <p>I wish to draw specific attention to Regulation 35 of the Universal Credit Regulations 2013, which provides that a claimant must be placed in the LCWRA group if there would be a substantial risk to the mental or physical health of any person if the claimant were found not to have limited capability for work related activity. My psychiatrist Dr. Fiona Marshall has confirmed in writing that requiring me to engage in work related activity at this time would pose a serious and substantial risk to my mental health and could result in significant deterioration in my condition.</p>
+    <p><strong>The Reality of My Daily Life</strong></p>
+    <p>On many days I cannot shower, prepare food, or manage basic tasks without assistance. My PTSD means that the outside world feels genuinely dangerous to me — not as a choice or exaggeration, but as a real and overwhelming experience I have no control over. Requiring me to attend work related activity would not help me into work. It would make me significantly worse.</p>
+    <p><strong>Legal Basis</strong></p>
+    <p>I rely on Universal Credit Regulations 2013 Regulation 35 and Schedule 7, the Equality Act 2010, DWP Work Capability Assessment guidance on fluctuating conditions, and R(IB) 2/03 confirming that assessments must consider the claimant's ability to perform activities reliably, repeatedly, safely and to an acceptable standard.</p>
+    <p>If this reconsideration is unsuccessful I intend to appeal to the First-tier Tribunal (Social Entitlement Chamber) and will be seeking support from a welfare rights adviser in preparation for doing so.</p>
+    <p>Yours faithfully,<br><strong>David Brennan</strong></p>
+  </div>
+</div>
+
+<div style="text-align:center; margin-top:3rem;">
+  <p style="color:var(--text-mid); font-size:0.9rem; font-weight:300; font-style:italic;">All names, dates, reference numbers and details in these sample letters are entirely fictional and are provided for illustration purposes only.</p>
+  <div style="margin-top:2rem;">
+    <a href="#contact" class="btn-primary">Get Your Letter Written</a>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<style>
+  .letter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .letter-tab {
+    background: var(--white);
+    border: 1px solid rgba(27,42,74,0.2);
+    color: var(--navy);
+    padding: 0.6rem 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 0.03em;
+  }
+
+  .letter-tab.active {
+    background: var(--navy);
+    color: var(--gold);
+    border-color: var(--navy);
+  }
+
+  .letter-tab:hover {
+    background: var(--navy);
+    color: var(--gold);
+  }
+
+  .letter-container {
+    display: none;
+    position: relative;
+    background: var(--white);
+    border: 1px solid rgba(27,42,74,0.1);
+    padding: 3rem;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .letter-container.active {
+    display: block;
+  }
+
+  .letter-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 8rem;
+    font-weight: 600;
+    color: rgba(201, 168, 76, 0.12);
+    letter-spacing: 0.3em;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .letter-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .letter-content p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--text-mid);
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  .letter-header {
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .letter-header h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .letter-header p {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    margin-bottom: 0.25rem;
+  }
+</style>
+
+<script>
+  function showLetter(index) {
+    document.querySelectorAll('.letter-container').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    document.querySelectorAll('.letter-tab').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    document.getElementById('letter-' + index).classList.add('active');
+    document.querySelectorAll('.letter-tab')[index].classList.add('active');
+  }
+
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.closest('.letter-container')) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+<!-- FOOTER -->
+
+<footer>
+  <p><span>Vee Writes</span> — Your Voice. Professionally Heard.</p>
+  <p style="margin-top:0.5rem;">Based in Carmarthenshire · Serving Wales & Beyond · Fully Remote Service</p>
+  <p style="margin-top:0.5rem;">© 2025 Vee Writes · All rights reserved · Vee Writes is a writing and communication service only — not a legal, benefits, or regulated advice service. For legal advice please contact Citizens Advice or a qualified solicitor.</p>
+</footer>
+
+</body>
+</html>
