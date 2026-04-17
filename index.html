@@ -740,6 +740,7 @@ section { padding: 4rem 1.5rem; }
     <li><a href="#about">About</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#counselling" style="color:var(--gold);">Counselling — July 2026</a></li>
   </ul>
 </nav>
 
@@ -788,7 +789,10 @@ section { padding: 4rem 1.5rem; }
     <p>When you've received a decision that doesn't feel right and you need to push back — professionally, clearly, and confidently.</p>
     <ul class="service-list">
       <li>Universal Credit & PIP reconsiderations</li>
+      <li>PIP & LCWRA form completion support</li>
+      <li>PIP mobility component upgrade appeals</li>
       <li>DWP appeal letters</li>
+      <li>Blue badge disputes</li>
       <li>Housing association complaints</li>
       <li>School exclusion & non-attendance appeals</li>
       <li>EBSA & special educational needs correspondence</li>
@@ -798,7 +802,7 @@ section { padding: 4rem 1.5rem; }
       <li>Council correspondence</li>
     </ul>
     <div class="service-price">
-      Starter from £30 · Complex from £45 · Full Package from £120
+      PIP Form Support £40 · LCWRA Form Support £30 · Letters from £30 · Complex from £45 · Full Package from £120
     </div>
   </div>
 
@@ -968,6 +972,66 @@ section { padding: 4rem 1.5rem; }
   <p>Not sure where to start? Send me whatever you've received — any letter, any decision, any situation you don't know how to respond to. I'll review it completely free of charge and tell you exactly what your options are. No cost. No obligation. No jargon. Just a straight, honest answer.</p>
 </div>
 
+<!-- CONTACT FORM -->
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width:600px; margin:3rem auto; text-align:left;">
+  <input type="hidden" name="form-name" value="contact">
+  <p style="display:none;"><input name="bot-field"></p>
+
+  <div class="form-group">
+    <label class="form-label">Your Name *</label>
+    <input type="text" name="name" required class="form-input" placeholder="Your full name">
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Email Address *</label>
+    <input type="email" name="email" required class="form-input" placeholder="your@email.com">
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Phone Number (optional)</label>
+    <input type="tel" name="phone" class="form-input" placeholder="Your phone number">
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">How would you prefer to be contacted? *</label>
+    <div class="form-radio-group">
+      <label class="form-radio"><input type="radio" name="contact_preference" value="Email" required> Email</label>
+      <label class="form-radio"><input type="radio" name="contact_preference" value="Phone"> Phone</label>
+      <label class="form-radio"><input type="radio" name="contact_preference" value="WhatsApp"> WhatsApp</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">What do you need help with? *</label>
+    <select name="service" required class="form-input">
+      <option value="" disabled selected>Please select...</option>
+      <option value="PIP Form Support">PIP Form Support — £40</option>
+      <option value="PIP Reconsideration Letter">PIP Reconsideration Letter — from £30</option>
+      <option value="PIP Mobility Upgrade">PIP Mobility Upgrade Letter — from £30</option>
+      <option value="LCWRA Form Support">LCWRA / UC50 Form Support — £30</option>
+      <option value="LCWRA Appeal Letter">LCWRA Appeal Letter — from £30</option>
+      <option value="Blue Badge Dispute">Blue Badge Dispute Letter — from £30</option>
+      <option value="Council Tax / Bailiff Letter">Council Tax / Bailiff Letter — from £30</option>
+      <option value="EBSA / School Letter">EBSA / School Non-Attendance Letter — from £30</option>
+      <option value="Housing Complaint">Housing Association Complaint — from £30</option>
+      <option value="NHS / Social Services Complaint">NHS / Social Services Complaint — from £30</option>
+      <option value="Student Support">Student Support — from £15</option>
+      <option value="Business Writing">Business Writing — from £35</option>
+      <option value="Free Letter Review">Free Letter Review</option>
+      <option value="Other">Something else — please describe below</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Tell me a bit about your situation</label>
+    <textarea name="message" class="form-input form-textarea" placeholder="Don't worry about getting it perfect — just tell me what's happening and I'll take it from there."></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary" style="width:100%; text-align:center; padding:1.2rem;">Send My Message</button>
+
+  <p style="color:rgba(255,255,255,0.4); font-size:0.8rem; text-align:center; margin-top:1rem;">I aim to respond within 24 hours. Your information is kept completely confidential.</p>
+</form>
+
 <div class="contact-methods">
   <div class="contact-method">
     <div class="contact-method-icon">📧</div>
@@ -986,31 +1050,6 @@ section { padding: 4rem 1.5rem; }
   </div>
 </div>
 
-<div class="process-steps">
-  <div class="process-step">
-    <span class="process-step-num">01</span>
-    <p>Get in touch via email, WhatsApp, or Facebook</p>
-  </div>
-  <div class="process-step">
-    <span class="process-step-num">02</span>
-    <p>Send me any relevant letters or documents</p>
-  </div>
-  <div class="process-step">
-    <span class="process-step-num">03</span>
-    <p>I'll respond within 24 hours with my honest assessment</p>
-  </div>
-  <div class="process-step">
-    <span class="process-step-num">04</span>
-    <p>Clear quote given — no hidden costs, no pressure</p>
-  </div>
-  <div class="process-step">
-    <span class="process-step-num">05</span>
-    <p>You decide. No obligation. Ever.</p>
-  </div>
-</div>
-
-<a href="mailto:hello@veewrites.co.uk" class="btn-primary">Send Me A Message</a>
-
 <div class="confidentiality-note">
   <p>🔒 Everything you share with me is treated with complete discretion. I understand that the situations behind these letters are often deeply personal. Your story is safe with me — always. Your information will never be shared with anyone, for any reason.</p>
 </div>
@@ -1018,6 +1057,204 @@ section { padding: 4rem 1.5rem; }
 
   </div>
 </section>
+
+<style>
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-label {
+    display: block;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
+  }
+
+  .form-input {
+    width: 100%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--white);
+    padding: 0.9rem 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: border-color 0.3s;
+    appearance: none;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--gold);
+  }
+
+  .form-input option {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .form-textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .form-radio-group {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .form-radio {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .form-radio input {
+    accent-color: var(--gold);
+  }
+</style>
+
+<!-- TESTIMONIALS -->
+
+<section style="background: var(--navy); padding: 6rem 2rem;">
+  <div class="section-inner">
+    <span class="section-label">What People Say</span>
+    <h2 class="section-title" style="color:var(--white);">Real People. <em>Real Results.</em></h2>
+    <div class="gold-divider"></div>
+    <p style="color:rgba(255,255,255,0.65); font-size:0.95rem; font-weight:300; margin-bottom:3rem;">I can't guarantee outcomes — but I can guarantee I'll give everything I've got. Here's what some of my clients have said.</p>
+
+```
+<div class="testimonials-grid">
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"Honestly didn't think a letter would do anything, I'd already been refused twice and was ready to just give up. My sister said try Vee so I did. What she wrote for me was unreal — she just got it, without me having to explain myself a hundred times. Got my PIP awarded and I actually cried when the letter came. Thank you so much Vee."</p>
+    <div class="testimonial-author">— Sharon, Swansea</div>
+    <div class="testimonial-service">PIP Mandatory Reconsideration</div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"I was an absolute mess when I contacted Vee. Facing court over my son's attendance and I didn't have a clue what to do. She explained everything, wrote the most amazing letter and I didn't feel alone for the first time in months. The penalty notice got dropped. She actually gets what it's like — you can tell."</p>
+    <div class="testimonial-author">— Donna, Llanelli</div>
+    <div class="testimonial-service">EBSA & School Non-Attendance Appeal</div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"I didn't even know this extra money existed til Vee mentioned it. She sorted my letter and it was nothing like anything I could have written myself — proper detailed and everything. Got the money added to my UC which I really needed. Wish I'd found her sooner tbh."</p>
+    <div class="testimonial-author">— Anonymous, Carmarthenshire</div>
+    <div class="testimonial-service">Universal Credit LCWRA Appeal</div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"I'm going back to college at 44 and the writing side was killing me. I was nearly going to drop out. Vee didn't do it for me which I was grateful for — she just sat with me (on WhatsApp lol) and helped me figure it out myself. Passed my assignment and actually felt proud of it for once."</p>
+    <div class="testimonial-author">— Karen, Port Talbot</div>
+    <div class="testimonial-service">Student Support</div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"My quotes and emails were embarrassing me if I'm honest. Vee sorted them out and didn't make me feel stupid about it either. Proper professional now and I've already noticed clients take me more seriously. Great service, good price, would 100% recommend."</p>
+    <div class="testimonial-author">— Mike, Neath</div>
+    <div class="testimonial-service">Business Writing</div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"The letter Vee wrote was brilliant, really professional and she explained everything to me properly. The bailiffs have been put on hold and I'm paying £10 a week which I can manage. But if I'm being honest I'm gutted the council didn't take the debt back off the bailiffs because I've still got £250 in extra fees on top that I wouldn't have had otherwise. That's not Vee's fault at all — she told me from the start she couldn't guarantee what would happen — but I'd have given 5 stars if it had gone the other way. Still really glad I used her though and I'd recommend her to anyone in the same situation."</p>
+    <div class="testimonial-author">— Tracy, Ammanford</div>
+    <div class="testimonial-service">Council Tax & Bailiff Challenge</div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"I'd already failed my assignment once and I was absolutely devastated. I nearly quit the whole course. A friend told me about Vee and honestly it was the best thing I ever did. She didn't write it for me — she helped me understand what I'd done wrong and how to fix it myself. I resubmitted and passed. I actually passed. I can't thank her enough."</p>
+    <div class="testimonial-author">— Leanne, Bridgend</div>
+    <div class="testimonial-service">Student Support — Assignment Resubmission</div>
+  </div>
+
+</div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"I'd been refused a blue badge twice and just gave up trying. My neighbour told me about Vee and I thought what have I got to lose. The letter she wrote was something else — proper professional, lots of legal stuff in it that I didn't even know existed. Three weeks later I got my badge. I actually cried. It's given me my independence back."</p>
+    <div class="testimonial-author">— Margaret, Carmarthen</div>
+    <div class="testimonial-service">Blue Badge Dispute</div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+    <p class="testimonial-text">"I was getting PIP but only the standard mobility rate. I didn't realise I could challenge that. Vee explained it to me properly and wrote the most amazing letter. They upgraded me to enhanced rate and I've now got a Motability car. I can get to my appointments, take my kids out, live a normal life again. I cannot put into words what that means to me. Thank you Vee."</p>
+    <div class="testimonial-author">— Julie, Neath Port Talbot</div>
+    <div class="testimonial-service">PIP Mobility Upgrade — Enhanced Rate</div>
+  </div>
+
+</div>
+
+<p style="color:rgba(255,255,255,0.4); font-size:0.8rem; text-align:center; margin-top:3rem; font-style:italic;">All testimonials are from clients of Vee Writes. Names have been changed or withheld to protect privacy.</p>
+```
+
+  </div>
+</section>
+
+<style>
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .testimonial-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 2rem;
+    transition: all 0.3s;
+  }
+
+  .testimonial-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(201,168,76,0.4);
+  }
+
+  .testimonial-stars {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.8);
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .testimonial-service {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+</style>
 
 <!-- SAMPLE LETTERS -->
 
@@ -1031,11 +1268,13 @@ section { padding: 4rem 1.5rem; }
 ```
 <!-- LETTER TABS -->
 <div class="letter-tabs">
-  <button class="letter-tab active" onclick="showLetter(0)">PIP — Fibromyalgia</button>
+  <button class="letter-tab" onclick="showLetter(0)">PIP — Fibromyalgia</button>
   <button class="letter-tab" onclick="showLetter(1)">PIP — Autism</button>
   <button class="letter-tab" onclick="showLetter(2)">Council Tax & Bailiffs</button>
   <button class="letter-tab" onclick="showLetter(3)">EBSA & School</button>
   <button class="letter-tab" onclick="showLetter(4)">LCWRA Appeal</button>
+  <button class="letter-tab" onclick="showLetter(5)">Blue Badge Dispute</button>
+  <button class="letter-tab" onclick="showLetter(6)">PIP Mobility Upgrade</button>
 </div>
 
 <!-- LETTER 1 -->
@@ -1167,6 +1406,60 @@ section { padding: 4rem 1.5rem; }
   </div>
 </div>
 
+<!-- LETTER 6 — BLUE BADGE -->
+<div class="letter-container" id="letter-5">
+  <div class="letter-watermark">SAMPLE</div>
+  <div class="letter-content">
+    <div class="letter-header">
+      <h3>BLUE BADGE — FORMAL CHALLENGE OF REFUSAL DECISION</h3>
+      <p><strong>Name:</strong> Patricia Evans &nbsp;|&nbsp; <strong>DOB:</strong> 12 May 1955</p>
+      <p><strong>Reference:</strong> BB/2024/339217 &nbsp;|&nbsp; <strong>Date:</strong> 17 April 2025</p>
+    </div>
+    <p>To Whom It May Concern,</p>
+    <p>I am writing to formally challenge the decision made on 2 April 2025 to refuse my application for a Blue Badge. I believe this decision does not accurately reflect the full extent of my mobility difficulties, fails to consider the supporting medical evidence provided, and is inconsistent with the eligibility criteria set out under the Transport Act 2000 and the Blue Badge Scheme Local Authority Guidance (England) 2019.</p>
+    <p><strong>My Conditions</strong></p>
+    <p>I have been diagnosed with severe osteoarthritis in both knees and hips, peripheral neuropathy, and heart failure. These conditions significantly and permanently affect my ability to walk. On my worst days — which occur the majority of the time — I am unable to walk more than a few metres without severe pain, breathlessness, and risk of falling. I use a walking frame at all times when mobile.</p>
+    <p><strong>Grounds for Challenge</strong></p>
+    <p><em>Failure to apply the correct eligibility criteria:</em> Under the Blue Badge Scheme, a person is eligible if they are unable to walk, or have very considerable difficulty walking, due to a permanent and substantial disability. I submit that I clearly meet this criteria. The decision letter does not adequately explain how this standard was applied to my circumstances and appears to have placed excessive weight on my presentation at assessment rather than my typical day to day mobility.</p>
+    <p><em>Failure to consider supporting medical evidence:</em> My application included a letter from my GP Dr. Rhian Morgan confirming my diagnoses and their impact on my mobility, a cardiology report confirming heart failure and its effect on my physical capacity, and a physiotherapy assessment confirming severely restricted mobility and use of a walking frame. I submit that this evidence was not given adequate weight in the decision making process.</p>
+    <p><em>Failure to consider fluctuating conditions:</em> The Blue Badge Scheme guidance makes clear that where a condition fluctuates, the assessment must consider the person's ability on their worst days and not solely on the basis of a single assessment appointment. My mobility varies significantly and at its worst I am entirely unable to mobilise independently.</p>
+    <p><strong>Legal Basis</strong></p>
+    <p>I rely on the Transport Act 2000 and the Blue Badge Scheme Local Authority Guidance 2019, which sets out the eligibility criteria and the assessment process. I also rely on the Equality Act 2010 — I am a disabled person and am entitled to have the full impact of my disability considered fairly and without disadvantage. Under the Public Sector Equality Duty the local authority must have due regard to the need to eliminate discrimination and advance equality of opportunity for disabled people.</p>
+    <p><strong>What I Am Requesting</strong></p>
+    <p>I formally request that this decision be reconsidered in full by a reviewing officer who has not previously been involved in my case. I ask that full weight be given to the supporting medical evidence enclosed, my day to day mobility difficulties, and the correct application of the Blue Badge eligibility criteria.</p>
+    <p>If this challenge is unsuccessful I intend to request a formal review, submit a complaint to the local authority, and seek advice from a disability rights organisation regarding further options available to me.</p>
+    <p>Yours faithfully,<br><strong>Patricia Evans</strong></p>
+  </div>
+</div>
+
+<!-- LETTER 7 — PIP MOBILITY UPGRADE -->
+<div class="letter-container" id="letter-6">
+  <div class="letter-watermark">SAMPLE</div>
+  <div class="letter-content">
+    <div class="letter-header">
+      <h3>PERSONAL INDEPENDENCE PAYMENT — MANDATORY RECONSIDERATION REQUEST (MOBILITY COMPONENT UPGRADE)</h3>
+      <p><strong>Name:</strong> Robert Griffiths &nbsp;|&nbsp; <strong>DOB:</strong> 30 January 1968</p>
+      <p><strong>NI Number:</strong> GH 11 22 33 J &nbsp;|&nbsp; <strong>Reference:</strong> PIP/2024/771543</p>
+      <p><strong>Date:</strong> 17 April 2025</p>
+    </div>
+    <p>To Whom It May Concern,</p>
+    <p>I am writing to formally request a mandatory reconsideration of the decision made on 15 March 2025 to award me the standard rate of the Mobility component of Personal Independence Payment. I accept the award of the standard rate of the Daily Living component. However I submit that the evidence clearly supports an award of the enhanced rate of the Mobility component, and that the failure to award this rate is incorrect and should be reviewed.</p>
+    <p>I wish to be clear about what is at stake. The difference between the standard and enhanced rate of the Mobility component is not merely financial — it is the difference between being able to access the Motability scheme and being unable to do so. Without the enhanced rate I cannot lease an adapted vehicle. Without an adapted vehicle I am effectively housebound. I respectfully ask that this be given full and careful consideration.</p>
+    <p><strong>Why I Should Receive the Enhanced Rate</strong></p>
+    <p>Under the PIP Mobility component, the enhanced rate is awarded where a claimant cannot walk further than 20 metres, or where they can walk further than 20 metres but no more than 50 metres, reliably, repeatedly, safely, and in a reasonable time period.</p>
+    <p>I have been diagnosed with Multiple Sclerosis, chronic fatigue syndrome, and severe anxiety disorder. The combination of these conditions means that on the majority of days I am unable to walk more than 15 to 20 metres without significant pain, fatigue, loss of balance, and risk of falling. I use a walking stick at all times and have fallen on four occasions in the past three months.</p>
+    <p><em>Reliability:</em> Even on days when I can walk a short distance, I cannot do so reliably. My MS causes unpredictable relapses and my fatigue means that what I can manage in the morning I am frequently unable to repeat later in the day.</p>
+    <p><em>Safety:</em> My balance difficulties and fall history mean that walking any significant distance without support poses a genuine risk to my safety. My neurologist Dr. Priya Sharma has confirmed in writing that I am at significant risk of falls and should not walk unsupported distances.</p>
+    <p><em>Repeatedly:</em> I am unable to walk even short distances repeatedly. The effort required to walk 20 metres leaves me requiring significant rest before I am able to mobilise again.</p>
+    <p><strong>Supporting Evidence</strong></p>
+    <p>I am enclosing: a letter from my neurologist Dr. Priya Sharma confirming my MS diagnosis, fall risk, and mobility limitations; a letter from my GP confirming all diagnoses and current treatment; an occupational therapy report confirming my mobility difficulties and equipment requirements; and a letter from my counsellor confirming the psychological impact of my conditions and their effect on my daily functioning.</p>
+    <p><strong>Legal Basis</strong></p>
+    <p>Under the Social Security (PIP) Regulations 2013 Schedule 1 Part 3, the enhanced rate of the Mobility component must be awarded where a claimant cannot walk more than 20 metres reliably, repeatedly, safely and in a reasonable time. I submit that I clearly satisfy this descriptor on the majority of days. I also rely on the Equality Act 2010 and the DWP's own guidance on fluctuating conditions which requires assessment across the majority of days rather than on the basis of a single appointment.</p>
+    <p>If this reconsideration is unsuccessful I intend to appeal to the First-tier Tribunal and will be requesting an oral hearing at which I will be supported by a disability rights adviser.</p>
+    <p>Yours faithfully,<br><strong>Robert Griffiths</strong></p>
+  </div>
+</div>
+
 <div style="text-align:center; margin-top:3rem;">
   <p style="color:var(--text-mid); font-size:0.9rem; font-weight:300; font-style:italic;">All names, dates, reference numbers and details in these sample letters are entirely fictional and are provided for illustration purposes only.</p>
   <div style="margin-top:2rem;">
@@ -1294,6 +1587,245 @@ section { padding: 4rem 1.5rem; }
     }
   });
 </script>
+
+<!-- ONLINE COUNSELLING -->
+
+<section id="counselling" style="background: var(--white); padding: 6rem 2rem;">
+  <div class="section-inner">
+    <span class="section-label">Coming July 2026</span>
+    <h2 class="section-title">Online Counselling <em>Sessions</em></h2>
+    <div class="gold-divider"></div>
+
+```
+<!-- QUOTE -->
+<div style="text-align:center; padding:3rem 0;">
+  <p style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.8rem,4vw,3rem); font-style:italic; font-weight:300; color:var(--gold); line-height:1.4; letter-spacing:0.02em;">"People who need therapy don't come to us.<br>Their victims do."</p>
+  <p style="font-size:0.8rem; color:var(--text-mid); margin-top:1rem; letter-spacing:0.1em; text-transform:uppercase;">Author Unknown</p>
+</div>
+
+<!-- INTRO -->
+<div class="section-body" style="margin-bottom:3rem;">
+  <p>Sometimes you just need someone to talk to. Someone who listens properly — without judgment, without an agenda — and who genuinely understands what it means to carry a hard life. From July 2026 I will be offering private online counselling sessions via video call or telephone, working from a person-centred approach.</p>
+  <p>I believe counselling should be accessible to everyone — not just those who can afford premium rates or who can take time off work on a Wednesday afternoon. That's why I offer evening and weekend appointments, and why I keep my rates as low as I can while remaining sustainable.</p>
+</div>
+
+<!-- SESSION INFO AND WAITING LIST -->
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:4rem; align-items:start; margin-bottom:5rem;">
+  <div>
+    <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:300; color:var(--navy); margin-bottom:1.5rem;">Session Information</h3>
+    <div style="background:var(--cream); padding:2rem; margin-bottom:2rem;">
+      <p style="font-size:0.9rem; color:var(--text-mid); line-height:1.9; font-weight:300;">
+        <strong style="color:var(--navy); display:block; margin-bottom:0.5rem;">50 minute session — £45</strong>
+        Via video call or telephone<br>
+        Evening & weekend appointments available<br>
+        Person-centred approach<br>
+        Fully insured<br>
+        BACP Registered<br>
+        ICO Registered — your data is protected<br>
+        Regular supervision maintained throughout<br>
+        Strict confidentiality — with clearly explained limits
+      </p>
+    </div>
+    <div style="background:var(--navy); padding:2rem;">
+      <p style="color:var(--gold); font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:1rem;">Why Evening & Weekends?</p>
+      <p style="color:rgba(255,255,255,0.75); font-size:0.85rem; font-weight:300; line-height:1.8;">Too many people go without therapy because services only run 9 to 5, Monday to Friday. If you work, have caring responsibilities, or simply can't access support during the day — you shouldn't have to go without. I offer flexible appointment times because I believe access to good mental health support shouldn't depend on your work schedule.</p>
+    </div>
+  </div>
+
+  <div style="background:var(--navy); padding:3rem;">
+    <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:300; color:var(--white); margin-bottom:1rem;">Join the Waiting List</h3>
+    <p style="color:rgba(255,255,255,0.65); font-size:0.9rem; font-weight:300; line-height:1.7; margin-bottom:2rem;">Sessions open July 2026. Add your name now and I'll be in touch as soon as I'm taking bookings.</p>
+    <form name="waitinglist" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="waitinglist">
+      <p style="display:none;"><input name="bot-field"></p>
+      <div style="margin-bottom:1rem;">
+        <input type="text" name="name" required placeholder="Your name" style="width:100%; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); color:white; padding:0.9rem 1rem; font-family:'Jost',sans-serif; font-size:0.9rem; font-weight:300;">
+      </div>
+      <div style="margin-bottom:1rem;">
+        <input type="email" name="email" required placeholder="Your email address" style="width:100%; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); color:white; padding:0.9rem 1rem; font-family:'Jost',sans-serif; font-size:0.9rem; font-weight:300;">
+      </div>
+      <div style="margin-bottom:1.5rem;">
+        <input type="tel" name="phone" placeholder="Phone number (optional)" style="width:100%; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); color:white; padding:0.9rem 1rem; font-family:'Jost',sans-serif; font-size:0.9rem; font-weight:300;">
+      </div>
+      <button type="submit" class="btn-primary" style="width:100%; text-align:center;">Add Me To The List</button>
+    </form>
+    <p style="color:rgba(255,255,255,0.3); font-size:0.75rem; margin-top:1rem;">Your details will only be used to contact you about counselling sessions and will never be shared.</p>
+  </div>
+</div>
+
+<!-- CPD SECTION -->
+<div style="margin-bottom:4rem;">
+  <span class="section-label">Training & CPD</span>
+  <h3 style="font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--navy); margin-bottom:0.5rem;">200+ Hours of Specialist <em>Training</em></h3>
+  <div class="gold-divider"></div>
+  <p style="color:var(--text-mid); font-size:0.95rem; font-weight:300; line-height:1.8; margin:1.5rem 0 2rem;">In addition to my Foundation Degree in Counselling and 100+ supervised client hours, I have completed over 200 hours of Continuing Professional Development across a wide range of specialist areas. This is not box-ticking — it is a genuine commitment to understanding the people I work with and the complex lives they lead.</p>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem;">
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Female Genital Mutilation</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Domestic Abuse &amp; The Impact on Children</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Children &amp; Young People in Care</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Young Men's Mental Health</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Neuroscience of Addiction</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Social Work Law</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Resilience in Social Work</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Addiction</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Trauma — Children in Care</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Counselling Theory Legends</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Personality Disorders</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Adverse Childhood Experiences (ACEs)</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Post Incident Support</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Domestic Abuse &amp; Violence</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Emotionally Based School Avoidance (EBSA)</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Acknowledgement in Public Spaces</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Online &amp; Telephone Counselling</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Trauma Recovery</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Trauma Awareness</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Reflecting on AI &amp; Counselling</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Understanding Offenders</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Foundation For Infant Loss</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Self-Harm: Reflection &amp; Professional Response</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Understanding Cognitive Distortion</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">MARAC, DASH &amp; Safeguarding</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Working With Perpetrators</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Grief, Loss &amp; Empathy in Practice</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Faith, Belief &amp; Holding Space Without Judgement</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Staying Safe from Suicide</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">GDPR &amp; Safeguarding</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Suicide Study — BACP</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Male Sexual Abuse</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Dreams, Grief &amp; Ongoing Bonds</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Can Empathy be Learned?</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Monoculture &amp; Diversity in Counselling</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Attachment RAD</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Coercion, Narcissism &amp; Power in the Counselling Room</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Rewriting Shame</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">DBT — Dialectical Behaviour Therapy</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Arranged Marriages</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Depression &amp; Anxiety</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Breathing Techniques &amp; Grounding</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Bereavement &amp; Loss</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Men's Mental Health</div>
+    <div style="background:var(--cream); border-left:2px solid var(--gold); padding:0.6rem 0.8rem; font-size:0.8rem; color:var(--text-mid); font-weight:300;">Trauma-Informed Practice</div>
+  </div>
+</div>
+
+<!-- UNREGULATED TITLE WARNING -->
+<div style="background:var(--navy); padding:3rem; margin-bottom:3rem;">
+  <span class="section-label">Important Information</span>
+  <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:300; color:var(--white); margin-bottom:1rem;">How to Choose a <em>Safe Therapist</em></h3>
+  <div style="color:rgba(255,255,255,0.75); font-size:0.9rem; line-height:1.9; font-weight:300;">
+    <p style="margin-bottom:1rem;">This is something I feel strongly about and want to be completely transparent with you about: in the UK, the titles <strong style="color:var(--gold);">"counsellor" and "therapist" are not legally protected.</strong> This means that technically, anyone can call themselves a counsellor or therapist — regardless of whether they have any training, qualifications, or professional registration.</p>
+    <p style="margin-bottom:1rem;">This is a serious issue. An untrained person presenting as a therapist can cause significant and lasting harm to vulnerable people who are seeking genuine help. This is not a theoretical risk — it happens.</p>
+    <p style="margin-bottom:1.5rem;">Here is what to look for when choosing a therapist:</p>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+      <div style="background:rgba(255,255,255,0.05); padding:1.2rem; border-top:2px solid var(--gold);">
+        <p style="color:var(--gold); font-size:0.8rem; font-weight:600; margin-bottom:0.5rem;">PROFESSIONAL REGISTRATION</p>
+        <p style="font-size:0.85rem;">Look for BACP, UKCP, or BPS registration. These bodies have ethical codes and complaints processes.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:1.2rem; border-top:2px solid var(--gold);">
+        <p style="color:var(--gold); font-size:0.8rem; font-weight:600; margin-bottom:0.5rem;">VERIFIED QUALIFICATION</p>
+        <p style="font-size:0.85rem;">Ask what qualification they hold and where they studied. A genuine counsellor will answer this clearly and confidently.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:1.2rem; border-top:2px solid var(--gold);">
+        <p style="color:var(--gold); font-size:0.8rem; font-weight:600; margin-bottom:0.5rem;">INSURANCE</p>
+        <p style="font-size:0.85rem;">Any legitimate practitioner holds professional indemnity insurance. Always ask.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:1.2rem; border-top:2px solid var(--gold);">
+        <p style="color:var(--gold); font-size:0.8rem; font-weight:600; margin-bottom:0.5rem;">SUPERVISION</p>
+        <p style="font-size:0.85rem;">Qualified counsellors attend regular clinical supervision. This protects both client and practitioner.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:1.2rem; border-top:2px solid var(--gold);">
+        <p style="color:var(--gold); font-size:0.8rem; font-weight:600; margin-bottom:0.5rem;">ICO REGISTRATION</p>
+        <p style="font-size:0.85rem;">Any therapist handling your personal data should be registered with the Information Commissioner's Office under GDPR.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:1.2rem; border-top:2px solid var(--gold);">
+        <p style="color:var(--gold); font-size:0.8rem; font-weight:600; margin-bottom:0.5rem;">CHECK THE REGISTER</p>
+        <p style="font-size:0.85rem;">The BACP register is publicly searchable at bacp.co.uk. Any registered member can be verified in seconds.</p>
+      </div>
+    </div>
+    <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; font-style:italic;">My own BACP registration, qualifications, insurance, ICO registration, and supervision arrangements are all in place and available on request. I will always answer any question you have about my professional standing clearly and honestly.</p>
+  </div>
+</div>
+
+<!-- PRIVACY & GDPR -->
+<div style="background:var(--cream); padding:3rem; border:1px solid rgba(27,42,74,0.1);">
+  <span class="section-label">Privacy & Confidentiality</span>
+  <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:300; color:var(--navy); margin-bottom:1rem;">Your Information is <em>Safe With Me</em></h3>
+  <div style="color:var(--text-mid); font-size:0.9rem; line-height:1.9; font-weight:300;">
+    <p style="margin-bottom:1rem;"><strong style="color:var(--navy);">Confidentiality</strong> — Everything you share with me is treated with complete confidentiality. What you tell me stays between us. I will never share your information with anyone without your explicit consent.</p>
+    <p style="margin-bottom:1rem;"><strong style="color:var(--navy);">The limits of confidentiality</strong> — In line with BACP ethical guidelines, there are rare situations where I may need to break confidentiality without your consent. These are: if I believe there is a serious and immediate risk to your life or someone else's; if I am required to do so by law; or if a court orders disclosure. I will always discuss this with you in our first session so there are no surprises.</p>
+    <p style="margin-bottom:1rem;"><strong style="color:var(--navy);">GDPR & Data Protection</strong> — I am registered with the Information Commissioner's Office (ICO) in compliance with the General Data Protection Regulation (GDPR). Any personal information you share with me is stored securely, password protected, and encrypted. Only I have access to your data.</p>
+    <p style="margin-bottom:1rem;"><strong style="color:var(--navy);">What information I hold</strong> — I may hold your name, contact details, session notes, and relevant personal information shared during sessions. This information is held only for as long as necessary and in line with BACP guidance on record retention.</p>
+    <p style="margin-bottom:1rem;"><strong style="color:var(--navy);">Your rights</strong> — Under GDPR you have the right to access the information I hold about you, request corrections, and request deletion of your data. To exercise any of these rights please contact me directly.</p>
+    <p style="margin-bottom:0;"><strong style="color:var(--navy);">Supervision</strong> — As a qualified practitioner I attend regular clinical supervision. Your material may be discussed in supervision in an anonymised form as part of my professional development and to ensure you receive the best possible care. Your identity will never be disclosed.</p>
+  </div>
+</div>
+
+<div style="margin-top:2rem; padding:1.5rem; background:var(--white); border:1px solid rgba(27,42,74,0.1);">
+  <p style="font-size:0.85rem; color:var(--text-mid); line-height:1.8; text-align:center;"><strong>Please note:</strong> Online counselling is not a crisis service. If you are in immediate distress please contact the Samaritans on 116 123 (free, 24 hours) or call 999 in an emergency.</p>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- SUPPORT RESOURCES -->
+
+<section style="background: var(--navy-deep); padding: 4rem 2rem; border-top: 1px solid rgba(201,168,76,0.2);">
+  <div class="section-inner" style="max-width:800px;">
+    <span class="section-label">If You Need Immediate Support</span>
+    <h2 class="section-title" style="color:var(--white); font-size:2rem;">You Don't Have To Face This <em>Alone</em></h2>
+    <div class="gold-divider"></div>
+    <p style="color:rgba(255,255,255,0.65); font-size:0.95rem; font-weight:300; margin-bottom:2rem;">If you are in distress or need to speak to someone urgently, please reach out. Help is available 24 hours a day.</p>
+
+```
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem;">
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">SAMARITANS</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">Free, 24 hours<br><strong style="color:var(--white);">116 123</strong></p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">MIND INFOLINE</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">Mon–Fri 9am–6pm<br><strong style="color:var(--white);">0300 123 3393</strong></p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">SHOUT</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">Free text support, 24 hours<br><strong style="color:var(--white);">Text 85258</strong></p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">NHS 111</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">Urgent medical or mental health advice<br><strong style="color:var(--white);">Call 111</strong></p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">CITIZENS ADVICE</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">Free advice on benefits, debt & more<br><strong style="color:var(--white);">0800 144 8848</strong></p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">NATIONAL DEBTLINE</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">Free debt advice<br><strong style="color:var(--white);">0808 808 4000</strong></p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">SHELTER CYMRU</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">Housing advice for Wales<br><strong style="color:var(--white);">0800 495 495</strong></p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); padding:1.5rem;">
+    <p style="color:var(--gold); font-weight:600; font-size:0.85rem; margin-bottom:0.5rem;">EMERGENCY</p>
+    <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; font-weight:300; line-height:1.6;">If someone is in immediate danger<br><strong style="color:var(--white);">Call 999</strong></p>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
 
 <!-- FOOTER -->
 
